@@ -25,7 +25,7 @@ def Fetch(weblink):
 					
 					DiskFilelist = os.listdir(file_dir)
 					
-					if len(DiskFilelist) != 0:
+					if DiskFilelist:
 						DiskFileName = max(DiskFilelist)
 						if DiskFileName == file_name:
 							continue

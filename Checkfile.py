@@ -1,7 +1,6 @@
 
 import os
 import urllib2
-import re
 
 def all_dir_name(path):
 	for root,dirs,files in os.walk(r'%s' %path):

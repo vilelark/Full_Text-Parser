@@ -2,8 +2,8 @@ import os
 import Checkfile
 import Parser
 
-check = Checkfile.all_dir_name(os.getcwd())
-correctdir = Checkfile.correct_dir(check)
+checkdir = Checkfile.all_dir_name(os.getcwd())
+correctdir = Checkfile.correct_dir(checkdir)
 
 Checkfile.last_file(correctdir)
 

@@ -22,13 +22,6 @@ def Fetch(weblink):
 					
 					if not os.path.exists(file_dir):
 						os.makedirs(file_dir)
-					
-					DiskFilelist = os.listdir(file_dir)
-					
-					if DiskFilelist:
-						DiskFileName = max(DiskFilelist)
-						if DiskFileName == file_name:
-							continue
 
 					if not os.path.exists(file_dir + file_name):
 						each_file = urllib2.urlopen(href)
